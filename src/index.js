@@ -17,10 +17,14 @@ const Book = () =>{
   </article>
 }
 
-const Image = () => <h2>image placeholder</h2>
-const Title = () => <h2>Book Title</h2>
+const Image = () => 
+<img
+    src="https://images-na.ssl-images-amazon.com/images/I/81Gvt3v-J3L._AC_UL600_SR600,400_.jpg"
+    alt="How to Know a Person"
+  />
+const Title = () => <h2>How to Know a Person</h2>
 const Author = () =>{
-  return <h4>image placeholder</h4>
+  return <h4>David Brooks</h4>
 } 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Booklist/>)
