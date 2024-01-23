@@ -300,14 +300,9 @@ const Book = () => {
   );
 };
 
-const Image = () => (
-  <img
-    src="https://images-na.ssl-images-amazon.com/images/I/81Gvt3v-J3L._AC_UL600_SR600,400_.jpg"
-    alt="How to Know a Person"
-  />
-);
+const Image = () => <h2>image placeholder</h2>;
 const Title = () => {
-  return <h2>How to Know a Person</h2>;
+  return <h2>Book Title</h2>;
 };
 const Author = () => <h4>Author</h4>;
 
