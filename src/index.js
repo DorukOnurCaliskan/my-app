@@ -12,23 +12,18 @@ const Booklist = () => {
   </section>
 }
 const Book = () =>{
-  return <article className='book'>
-    <Image />
-    <Title />
-    <Author/>
+  return (
+  <article className='book'>
+     <article className="book">
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/I/81Gvt3v-J3L._AC_UL600_SR600,400_.jpg"
+        alt="How to Know a Person"
+      />
+      <h2>Interesting Facts For Curious Minds</h2>
+      <h4>Jordan Moore </h4>
+    </article>
   </article>
-}
-
-const Image = () => 
-<img
-    src="https://images-na.ssl-images-amazon.com/images/I/81Gvt3v-J3L._AC_UL600_SR600,400_.jpg"
-    alt="How to Know a Person"
-  />
-const Title = () => <h2>How to Know a Person</h2>
-const Author = () =>{
-  return <h4 style={{ color: "#617d98", fontSize: "0.75rem", marginTop: "0.5rem" }}>
-    Jordan Moore
-  </h4>
-} 
+  );
+};
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Booklist/>)
