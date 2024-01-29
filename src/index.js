@@ -26,7 +26,9 @@ const Image = () =>
   />
 const Title = () => <h2>How to Know a Person</h2>
 const Author = () =>{
-  return <h4>David Brooks</h4>
+  return <h4 style={{ color: "#617d98", fontSize: "0.75rem", marginTop: "0.5rem" }}>
+    Jordan Moore
+  </h4>
 } 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Booklist/>)
