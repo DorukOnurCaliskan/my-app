@@ -11,18 +11,21 @@ const Booklist = () => {
     <Book/>
   </section>
 }
-const Book = () =>{
+const author = "Jordan Moore";
+const Book = () => {
+  const title = "Interesting Facts For Curious Mindssssss";
   return (
-  <article className='book'>
-     <article className="book">
+    <article className="book">
       <img
         src="https://images-na.ssl-images-amazon.com/images/I/81Gvt3v-J3L._AC_UL600_SR600,400_.jpg"
         alt="How to Know a Person"
       />
-      <h2>Interesting Facts For Curious Minds</h2>
-      <h4>Jordan Moore </h4>
+      <h2>{title}</h2>
+
+      <h4>{author.toUpperCase()} </h4>
+      {/* <p>{let x = 6}</p> */}
+      <p>{6 + 6}</p>
     </article>
-  </article>
   );
 };
 const root = ReactDOM.createRoot(document.getElementById('root'));
