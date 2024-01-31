@@ -9,17 +9,18 @@ const img = "https://images-na.ssl-images-amazon.com/images/I/81Gvt3v-J3L._AC_UL
 function BookList() {
   return (
     <section className="booklist">
-      <Book />
-      <Book />
+      <Book author={author} title={title} img={img} />
+      <Book title={title} img={img} />
     </section>
   );
 }
-const Book = () => {
+const Book = (props) => {
+  console.log(props);
   return (
     <article className="book">
-      <img src={img} alt={title} />
-      <h2>{title}</h2>
-      <h4>{author} </h4>
+      <img src={props.img} alt={props.title} />
+      <h2>{props.title}</h2>
+      <h4>{props.author} </h4>
     </article>
   );
 };
