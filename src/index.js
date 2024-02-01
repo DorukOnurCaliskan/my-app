@@ -2,15 +2,30 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import './index.css';
-const author = "Jordan Moore";
-const title = "How to Know a Person";
-const img = "https://images-na.ssl-images-amazon.com/images/I/81Gvt3v-J3L._AC_UL600_SR600,400_.jpg";
+const firstBook = {
+  author: "Jordan Moore",
+  title: "Interesting Facts For Curious Minds",
+  img: "./images/book-1.jpg",
+};
+const secondBook = {
+  author: "James Clear",
+  title: "How to Know a Person",
+  img: "https://images-na.ssl-images-amazon.com/images/I/81Gvt3v-J3L._AC_UL600_SR600,400_.jpg",
+};
 
 function BookList() {
   return (
     <section className="booklist">
-      <Book author={author} title={title} img={img} />
-      <Book title={title} img={img} />
+      <Book
+        author={firstBook.author}
+        title={firstBook.title}
+        img={firstBook.img}
+      />
+      <Book
+        author={secondBook.author}
+        title={secondBook.title}
+        img={secondBook.img}
+      />
     </section>
   );
 }
