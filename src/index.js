@@ -18,11 +18,8 @@ function BookList() {
     <section className="booklist">
       {books.map((book) => {
         console.log(book);
-        return (
-          <div>
-            <h2>{book.title}</h2>
-          </div>
-        );
+        const { img, title, author } = book;
+        return <Book img={img} title={title} author={author} />;
       })}
     </section>
   );
