@@ -16,22 +16,16 @@ const secondBook = {
 function BookList() {
   return (
     <section className="booklist">
-      <Book
-        author={firstBook.author}
-        title={firstBook.title}
-        img={firstBook.img}
-      >
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-          repudiandae inventore eos qui animi sed iusto alias eius ea sapiente.
-        </p>
-        <button>click me</button>
-      </Book>
-      <Book
-        author={secondBook.author}
-        title={secondBook.title}
-        img={secondBook.img}
-      />
+      {books.map((book) => {
+        console.log(book);
+
+        // return 'hello';
+        return (
+          <div>
+            <h2>{book.title}</h2>
+          </div>
+        );
+      })}
     </section>
   );
 }
