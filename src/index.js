@@ -18,8 +18,6 @@ function BookList() {
     <section className="booklist">
       {books.map((book) => {
         console.log(book);
-
-        // return 'hello';
         return (
           <div>
             <h2>{book.title}</h2>
